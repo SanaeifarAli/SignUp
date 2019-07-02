@@ -4,6 +4,8 @@
     <preference for="Task1\SignUp\Api\Data\ItemInterface" type="Task1\SignUp\Model\Item"/>
     <preference for="Task1\SignUp\Api\ItemRepositoryInterface" type="Task1\SignUp\Model\ItemRepository"/>
     <preference for="Task1\SignUp\Api\SignUpCreateInterface" type="Task1\SignUp\Model\SignUpCreate" />
+    <preference for="Task1\SignUp\Api\SignUpUpdateInterface" type="Task1\SignUp\Model\SignUpUpdate" />
+    <preference for="Task1\SignUp\Api\SignUpDeleteInterface" type="Task1\SignUp\Model\SignUpDelete" />
 
     <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
         <arguments>
