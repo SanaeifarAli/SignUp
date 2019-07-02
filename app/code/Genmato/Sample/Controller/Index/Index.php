@@ -37,7 +37,7 @@ class Index extends Action
 
 
         $ch = curl_init();
-        curl_setopt($ch, CURLOPT_URL, "http://localhost/rest/V1/signupCreate/");
+        curl_setopt($ch, CURLOPT_URL, "http://localhost/rest/V1/signupCreate");
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
             'APIKEY: 111111111111111111111',
@@ -50,10 +50,10 @@ class Index extends Action
          curl_close($ch);
 
 
-        /*$result = $this->resultFactory->create(ResultFactory::TYPE_RAW);
+        $result = $this->resultFactory->create(ResultFactory::TYPE_RAW);
         $result->setContents('response for api create:');
         return $result;
-        return $this->resultPageFactory->create();*/
+        return $this->resultPageFactory->create();
 
     }
 }
