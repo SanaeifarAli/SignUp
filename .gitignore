@@ -47,6 +47,9 @@ atlassian*
 /dev/tools/*.*
 /dev/travis/*
 /dev/*.*
+/dev
+/generated
+/config
 
 /lib
 
