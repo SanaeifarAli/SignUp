@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <preference for="Task1\SignUp\Api\Data\ItemInterface" type="Task1\SignUp\Model\Item"/>
+    <preference for="Task1\SignUp\Api\ItemRepositoryInterface" type="Task1\SignUp\Model\ItemRepository"/>
+    <preference for="Task1\SignUp\Api\SignUpCreateInterface" type="Task1\SignUp\Model\SignUpCreate" />
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="signup_demo_grid_data_source" xsi:type="string">Task1\SignUp\Model\ResourceModel\Demo\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Magento\Sales\Model\ResourceModel\Order\Grid">
+        <arguments>
+            <argument name="columns" xsi:type="array">
+                <item name="base_tax_amount" xsi:type="string">sales_order.base_tax_amount</item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>

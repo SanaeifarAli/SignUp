@@ -1,0 +1,16 @@
+{
+  "name": "task1/signup",
+  "description": "Task1 Magento2 SignUp extension",
+  "keywords": ["magento2", "task1", "m2signup"],
+  "type": "magento2-module",
+  "license": "OSL-3.0",
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0"
+  },
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Task1\\SignUp\\": ""
+    }
+  }
+}

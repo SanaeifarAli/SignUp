@@ -1,0 +1,14 @@
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Datee</td>
+    </tr>
+    <?php foreach($block->getDemoItems() as $item): ?>
+        <tr>
+            <td><?php echo $item->getId(); ?></td>
+            <td><?php echo $item->getname(); ?></td>
+            <td><?php echo $item->getdate(); ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>

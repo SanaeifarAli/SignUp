@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<routes>
+    <route url="V1/signup" method="GET">
+        <service class="Task1\SignUp\Api\ItemRepositoryInterface" method="getList"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="V1/signupCreate" method="POST">
+        <service class="Task1\SignUp\Api\SignUpCreateInterface" method="setData"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+</routes>
