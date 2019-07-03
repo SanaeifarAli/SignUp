@@ -3,7 +3,7 @@
 namespace Task1\SignUp\Controller\Index;
 
 use Magento\Framework\Controller\ResultFactory;
-use Task1\SignUp\Model\ItemFactory;
+use Task1\SignUp\Model\DemoFactory;
 
 class Save extends \Magento\Framework\App\Action\Action
 {
@@ -12,11 +12,11 @@ class Save extends \Magento\Framework\App\Action\Action
     /**
      * Save constructor.
      * @param \Magento\Framework\App\Action\Context $context
-     * @param ItemFactory $itemFactory
+     * @param DemoFactory $itemFactory
      */
     public function __construct(
         \Magento\Framework\App\Action\Context $context,
-        ItemFactory $itemFactory
+        DemoFactory $itemFactory
     ) {
         $this->itemFactory = $itemFactory;
         parent::__construct($context);
