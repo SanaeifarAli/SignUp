@@ -9,6 +9,16 @@ use Psr\Log\LoggerInterface as Logger;
 
 class Collection extends \Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult
 {
+    /**
+     * Collection constructor.
+     * @param EntityFactory $entityFactory
+     * @param Logger $logger
+     * @param FetchStrategy $fetchStrategy
+     * @param EventManager $eventManager
+     * @param string $mainTable
+     * @param string $resourceModel
+     * @throws \Magento\Framework\Exception\LocalizedException
+     */
     public function __construct(
         EntityFactory $entityFactory,
         Logger $logger,

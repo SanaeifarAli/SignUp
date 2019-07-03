@@ -5,9 +5,8 @@ namespace Task1\SignUp\Block;
 class Booking extends \Magento\Framework\View\Element\Template
 {
     /**
-     * Construct
-     *
-     * @param \Magento\Framework\View\Element\Template\Context $context
+     * Booking constructor.
+     * @param \Magento\Backend\Block\Template\Context $context
      * @param array $data
      */
     public function __construct(
@@ -19,19 +18,10 @@ class Booking extends \Magento\Framework\View\Element\Template
     }
 
     /**
-     * Get form action URL for POST booking request
-     *
      * @return string
      */
     public function getFormAction()
     {
-        // companymodule is given in routes.xml
-        // controller_name is folder name inside controller folder
-        // action is php file name inside above controller_name folder
-
-        //return '/signup/controller_name/action';
-        // here controller_name is index, action is booking
-
         return 'signup/index/save';
     }
 }

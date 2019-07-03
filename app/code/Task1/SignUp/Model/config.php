@@ -7,15 +7,21 @@ use Magento\Framework\App\Config\ScopeConfigInterface;
 class Config
 {
     const XML_PATH_ENABLED = 'signup/general/enabled';
-    //const XML_PATH_CRON_EXPRESSION = 'signup/general/cron_expression';
 
     private $config;
 
+    /**
+     * Config constructor.
+     * @param ScopeConfigInterface $config
+     */
     public  function __construct(ScopeConfigInterface $config)
     {
         $this->config = $config;
     }
 
+    /**
+     * @return mixed
+     */
     public  function isEnabled()
     {
         return $this->config->getValue(self::XML_PATH_ENABLED);

@@ -3,6 +3,10 @@ namespace Task1\SignUp\Helper;
 
 class Data extends \Magento\Framework\App\Helper\AbstractHelper
 {
+    /**
+     * @param $config_path
+     * @return mixed
+     */
     public function getConfig($config_path)
     {
         return $this->scopeConfig->getValue(

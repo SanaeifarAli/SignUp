@@ -9,25 +9,22 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 
 class InstallData implements InstallDataInterface
 {
-    /**
-     * Demo factory
-     *
-     * @var DemoFactory
-     */
     private $demoFactory;
+
     /**
-     * Init
-     *
+     * InstallData constructor.
      * @param DemoFactory $demoFactory
      */
     public function __construct(DemoFactory $demoFactory)
     {
         $this->demoFactory = $demoFactory;
     }
-/**
- * {@inheritdoc}
- * * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
- */
+
+    /**
+     * @param ModuleDataSetupInterface $setup
+     * @param ModuleContextInterface $context
+     * @throws \Exception
+     */
     public function install(ModuleDataSetupInterface $setup,
                             ModuleContextInterface $context)
     {
@@ -35,15 +32,11 @@ class InstallData implements InstallDataInterface
             'name' => 'Test Name',
             'date' => '2019/05/28',
         ];
-        /**
-         * Insert demo data
-         */
         $this->createDemo()->setData($demoData)->save();
     }
+
     /**
-     * Create demo
-     *
-     * @return Demo
+     * @return mixed
      */
     public function createDemo()
     {

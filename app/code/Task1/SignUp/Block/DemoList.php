@@ -12,6 +12,12 @@ class DemoList extends Template
 
     protected $_demoColFactory;
 
+    /**
+     * DemoList constructor.
+     * @param Template\Context $context
+     * @param \Task1\SignUp\Model\ResourceModel\Demo\CollectionFactory $collectionFactory
+     * @param array $data
+     */
     public function __construct(Template\Context $context, \Task1\SignUp\Model\ResourceModel\Demo\CollectionFactory $collectionFactory,
         array $data = []
     ) {
@@ -22,6 +28,9 @@ class DemoList extends Template
         );
     }
 
+    /**
+     * @return mixed
+     */
     public function getDemoItems()
     {
         if (null === $this->_demoCollection) {

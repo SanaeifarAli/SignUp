@@ -9,11 +9,18 @@ class ItemRepository implements ItemRepositoryInterface
 {
     private $collectionFactory;
 
+    /**
+     * ItemRepository constructor.
+     * @param CollectionFactory $collectionFactory
+     */
     public function __construct(CollectionFactory $collectionFactory)
     {
         $this->collectionFactory = $collectionFactory;
     }
 
+    /**
+     * @return \Task1\SignUp\Api\Data\ItemInterface[]
+     */
     public function getList()
     {
         return $this->collectionFactory->create()->getItems();

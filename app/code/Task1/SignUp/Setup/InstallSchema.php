@@ -8,13 +8,15 @@ use Magento\Framework\DB\Adapter\AdapterInterface;
 
 class InstallSchema implements InstallSchemaInterface
 {
+    /**
+     * @param SchemaSetupInterface $setup
+     * @param ModuleContextInterface $context
+     * @throws \Zend_Db_Exception
+     */
     public function install(SchemaSetupInterface $setup,ModuleContextInterface $context)
     {
         $installer = $setup;
         $installer->startSetup();
-        /**
-         * Create table 'genmato_demo'
-         */
         $table = $installer->getConnection()->newTable(
             $installer->getTable('task1_signup')
         )->addColumn(

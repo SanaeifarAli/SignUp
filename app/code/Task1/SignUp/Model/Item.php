@@ -5,16 +5,11 @@ use Task1\SignUp\Api\Data\ItemRepositoryInterface;
 
 class Item extends ItemInterface
 {
-    /**#@+
-     * Constant for confirmation status
-     */
     const KEY_NAME = 'name';
     const KEY_DATE = 'date';
 
-    /**#@-*/
-
     /**
-     * {@inheritdoc}
+     * @return mixed
      */
     public function getName()
     {
@@ -28,16 +23,18 @@ class Item extends ItemInterface
     {
         return $this->setData(self::KEY_NAME, $name);
     }
+
     /**
-     * {@inheritdoc}
+     * @return mixed
      */
     public function getDate()
     {
         return $this->_get(self::KEY_DATE);
     }
+
     /**
-     * @param string $date
-     * @return $this
+     * @param $name
+     * @return mixed
      */
     public function setDate($name)
     {

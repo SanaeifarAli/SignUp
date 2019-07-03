@@ -6,11 +6,11 @@ use Magento\Framework\Controller\ResultFactory;
 
 class NewAction extends Action
 {
+    /**
+     * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\ResultInterface
+     */
     public function execute()
     {
-        //$result = $this->resultFactory->create(ResultFactory::TYPE_RAW);
-        //$result->setContents('Hello New Action Frontend');
-        //return $result;
         return $this->resultFactory->create(ResultFactory::TYPE_PAGE);
     }
 }

@@ -8,6 +8,15 @@ class DataProvider extends AbstractDataProvider
 {
     protected $collection;
 
+    /**
+     * DataProvider constructor.
+     * @param $name
+     * @param $primaryFieldName
+     * @param $requestFieldName
+     * @param $collectionFactory
+     * @param array $meta
+     * @param array $data
+     */
     public function __construct(
         $name,
         $primaryFieldName,
@@ -20,6 +29,9 @@ class DataProvider extends AbstractDataProvider
         $this->collection = $collectionFactory->create();
     }
 
+    /**
+     * @return array
+     */
     public function getData()
     {
         $result = [];

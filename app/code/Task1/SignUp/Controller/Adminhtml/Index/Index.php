@@ -5,13 +5,11 @@ use Magento\Framework\Controller\ResultFactory;
 
 class Index extends \Magento\Backend\App\Action
 {
+    /**
+     * @return \Magento\Framework\App\ResponseInterface|\Magento\Framework\Controller\ResultInterface
+     */
     public function execute()
     {
-        /** @var \Magento\Framework\Controller\Result\Raw $result */
-        //$result = $this->resultFactory->create(ResultFactory::TYPE_RAW);
-        //$result->setContents('Hello Admins1');
-        //return $result;
-
         return $this->resultFactory->create(ResultFactory::TYPE_PAGE);
     }
 }
