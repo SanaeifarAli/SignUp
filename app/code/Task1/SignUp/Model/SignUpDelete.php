@@ -6,13 +6,14 @@ use Task1\SignUp\Api\SignUpDeleteInterface;
 class SignUpDelete implements SignUpDeleteInterface
 {
     /**
-     * @param string[] $data
+     * @param string $data
      * @return string
      */
     public function deleteData($data)
     {
 
-        $id =$data['signup_id'];
+        $id =$data;
+
 
         $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
         $resource = $objectManager->get('Magento\Framework\App\ResourceConnection');
