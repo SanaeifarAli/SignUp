@@ -1,15 +1,14 @@
 <?php
 namespace Task1\SignUp\Api;
 
-interface  SignUpDeleteInterface
+interface SignUpDeleteInterface
 {
-
     /**
      * POST for signup delete api
-     * @param string[] $data
+     *
+     * @param  string[] $data
      * @return string
      */
-
     public function deleteData($data);
 
 }

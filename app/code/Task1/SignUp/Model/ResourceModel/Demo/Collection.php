@@ -3,7 +3,8 @@
 namespace Task1\SignUp\Model\ResourceModel\Demo;
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
-class Collection extends AbstractCollection{
+class Collection extends AbstractCollection
+{
     /**
      * @var string
      */

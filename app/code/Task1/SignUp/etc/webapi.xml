@@ -19,7 +19,7 @@
             <resource ref="anonymous"/>
         </resources>
     </route>
-    <route url="V1/signupDelete" method="DELETE">
+    <route url="V1/signupDelete" method="PUT">
         <service class="Task1\SignUp\Api\SignUpDeleteInterface" method="deleteData"/>
         <resources>
             <resource ref="anonymous"/>

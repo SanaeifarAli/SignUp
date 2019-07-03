@@ -14,12 +14,12 @@ class SignUpDelete implements SignUpDeleteInterface
 
         $id =$data['signup_id'];
 
-        $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); // Instance of object manager
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
         $resource = $objectManager->get('Magento\Framework\App\ResourceConnection');
         $connection = $resource->getConnection();
         $tableName = $resource->getTableName('task1_signup');
 
-        $sql = "Delete " . $tableName . " where signup_id='$id'";
+        $sql = 'Delete From ' . $tableName . " where signup_id='$id'";
         $connection->query($sql);
 
         return 'signup successfully deleted';

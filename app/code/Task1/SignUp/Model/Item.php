@@ -1,9 +1,9 @@
 <?php
 namespace Task1\SignUp\Model;
 
-use Task1\SignUp\Api\Data\ItemRepositoryInterface;
+use Task1\SignUp\Api\Data\ItemInterface;
 
-class Item extends ItemInterface
+class Item implements ItemInterface
 {
     const KEY_NAME = 'name';
     const KEY_DATE = 'date';

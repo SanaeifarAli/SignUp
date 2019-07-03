@@ -2,7 +2,7 @@
 
 namespace Task1\SignUp\Controller\Adminhtml\Item;
 
-use Task1\SignUp\Model\ItemFactory;
+use Task1\SignUp\Model\DemoFactory;
 
 class Save extends \Magento\Backend\App\Action
 {
@@ -11,11 +11,11 @@ class Save extends \Magento\Backend\App\Action
     /**
      * Save constructor.
      * @param \Magento\Backend\App\Action\Context $context
-     * @param ItemFactory $itemFactory
+     * @param DemoFactory $itemFactory
      */
     public function __construct(
         \Magento\Backend\App\Action\Context $context,
-        ItemFactory $itemFactory
+        DemoFactory $itemFactory
     ) {
         $this->itemFactory = $itemFactory;
         parent::__construct($context);
