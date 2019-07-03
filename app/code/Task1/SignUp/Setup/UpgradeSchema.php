@@ -29,6 +29,16 @@ class UpgradeSchema implements UpgradeSchemaInterface
             );
         }
 
+        if (version_compare($context->getVersion(), '0.0.2', '<')) {
+            $setup->getConnection()->addIndex(
+                'task1_signup',
+                'name',
+                [
+                    'name'
+                ],
+                \Magento\Framework\DB\Adapter\AdapterInterface::INDEX_TYPE_FULLTEXT
+            );
+        }
         $setup->endSetup();
     }
 }
