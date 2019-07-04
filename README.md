@@ -26,9 +26,10 @@ This extension is the first task to test your magento 2 skill.
 - Admin grid to display all that have signed up (should be searchable by name and filterable by date)
 
 ## Setup
-- Download and copy "Task1" folder to "app/code" folder of magento 2
-- Open terminal and run command "magento module:enable Task1_SignUp"
-- Run command "magento setup:upgrade"
+- Magento 2 Open Source or Commerce edition is required
+- Download and copy "Task1" folder to 'app/code' folder of magento 2
+- Open terminal and run command 'magento module:enable Task1_SignUp'
+- Run command 'magento setup:upgrade'
 
 ## Usage
 
@@ -45,12 +46,13 @@ This extension is the first task to test your magento 2 skill.
 - http://yourDomain/admin/signup
 
 ## Settings
+- The configuration for this module is located in 'Stores > Configuration > SignUp > SignUp'
 
 ## Support
 
 ## Authors
  
- Ali Sanaeifar
+ - **Ali Sanaeifar** - 
  AliSanaeifar@Yahoo.com
 
 ## License
