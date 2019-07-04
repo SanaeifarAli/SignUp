@@ -2,7 +2,7 @@
 
 This extension is the first task to test your magento 2 skill.
 
- - [Task Description](#description)
+ - [Task Description](#task-description)
  - [Setup](#setup)
    - [Get the package](#get-the-package)
    - [Install the module](#install-the-module)
@@ -13,7 +13,7 @@ This extension is the first task to test your magento 2 skill.
  - [Authors](#authors)
  - [License](#license)
 
-## Description
+## Task Description
 
 ## Setup
 
