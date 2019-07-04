@@ -50,7 +50,8 @@ atlassian*
 /dev
 /generated
 /config
-
+/pub
+/.gitignore
 /lib
 
 /pub/media/*
