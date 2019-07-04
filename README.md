@@ -1,11 +1,6 @@
-# GDPR Module for Magento 2
+# Signup Task for Magento 2
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/opengento/module-gdpr.svg?style=flat-square)](https://packagist.org/packages/opengento/module-gdpr)
-[![License: MIT](https://img.shields.io/github/license/opengento/magento2-gdpr.svg?style=flat-square)](./LICENSE) 
-[![Packagist](https://img.shields.io/packagist/dt/opengento/module-gdpr.svg?style=flat-square)](https://packagist.org/packages/opengento/module-gdpr)
-[![Packagist](https://img.shields.io/packagist/dm/opengento/module-gdpr.svg?style=flat-square)](https://packagist.org/packages/opengento/module-gdpr)
-
-This extension allows customers to delete, anonymize, and export their personal data.
+This extension is the first task to test your magento 2 skill.
 
  - [Setup](#setup)
    - [Get the package](#get-the-package)
