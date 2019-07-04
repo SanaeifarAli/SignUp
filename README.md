@@ -46,14 +46,15 @@ This extension is the first task to test your magento 2 skill.
 - http://yourDomain/admin/signup
 
 ## Settings
-- The configuration for this module is located in 'Stores > Configuration > SignUp > SignUp'
+- The configuration for this module is located in 'Stores > Settings > Configuration > SignUp > SignUp'
 
 ## Support
+- If there are any comments,question or recommendation please let me know at AliSanaeifar@yahoo.com
 
 ## Authors
  
- - **Ali Sanaeifar** - 
- AliSanaeifar@Yahoo.com
+ - **Ali Sanaeifar**  
+ AliSanaeifar@yahoo.com
 
 ## License
 
