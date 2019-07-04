@@ -14,17 +14,16 @@ This extension is the first task to test your magento 2 skill.
 ### Create a signup sheet **
 
 **Frontend**
-Add a custom page with the URL "http://localhost/signup"
-Create a form with 2 inputs, name and date
-If the form is enabled, display the form. if it is disabled display an error message "Form not enabled"
+- Add a custom page with the URL "http://localhost/signup"
+- Create a form with 2 inputs, name and date
+- If the form is enabled, display the form. if it is disabled display an error message "Form not enabled"
 
 **CRUD**
-The module should have collection, resource module, data module, and interfaces to those classes. 
-Add API classes for the CRUD services
+- The module should have collection, resource module, data module, and interfaces to those classes Add API classes for the CRUD services
 
 **Admin**
-New menu item under the customer section New system config for enabled yes/no
-Admin grid to display all that have signed up (should be searchable by name and filterable by date)
+- New menu item under the customer section New system config for enabled yes/no
+- Admin grid to display all that have signed up (should be searchable by name and filterable by date)
 
 ## Setup
 
@@ -33,7 +32,7 @@ Admin grid to display all that have signed up (should be searchable by name and 
 **Frontend**
 - http://yourDomain/signup
 
-**CRUD:**
+**CRUD**
 - http://yourDomain/rest/V1/signup
 - http://yourDomain/rest/V1/signupCreate
 - http://yourDomain/rest/V1/signupUpdate
